@@ -1,0 +1,284 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+   
+    background: rgb(254,184,54);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+   
+}
+
+/* parallaxe */
+.parallaxe1 {
+    background: url(yazi_boss_full_size.jpg) 50%;
+   height: 700px;
+    position: relative;
+    opacity: .75;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.parallaxe2 {
+    background: url(boss1.jpg) 50%;
+   height: 500px;
+    position: relative;
+    opacity: .75;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.parallaxe3 {
+    background: url(boss2.jpg) 50%;
+   height: 600px;
+    position: relative;
+    opacity: .75;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.parallaxe5 {
+    background: url(boss4.jpg) 50% ;
+   height: 600px;
+    position: relative;
+    opacity: .75;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.parallaxe4 {
+    background: url(boss3.jpg) 50% ;
+   height: 600px;
+    position: relative;
+    opacity: .75;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.parallaxe4 i{
+    color: black;
+    transition: 0.5s ease-in-out ;
+}
+
+.parallaxe4 i:hover{
+    transform: scale(1.8);
+    color: rgb(255,173,27);
+}
+.heading{
+    position: absolute;
+    color: rgb(254,184,54);
+    font-size: 550%;
+    top: 38%;
+    width: 100%;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #000;
+    
+}
+
+
+
+.heading-sm{
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    color: black;
+    font-size: 250%;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 0 0 10px #000;
+}
+
+.deuxcol{
+    float: left;
+    width: 100%;
+    padding: 0 4%;
+    text-align: center;
+}
+
+
+section{
+    overflow: auto;
+    padding: 50px 80px;
+}
+.dark{
+overflow: auto;
+padding: 50px 80px;
+background-color: black;
+color: #f2f2f2;
+}
+/* cartes */
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.card{
+   
+     
+      
+        border-radius: 18px;
+        background: white;
+        box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+        font-family:Helvetica, sans-serif;
+        text-align: center;
+        transition: 0.5s ease;
+        margin: 20px;
+        width: 300px;
+        height: 500px;
+        transform-style: preserve-3d;
+        transform: perspective(1000px);
+    
+}
+
+
+.cardimage{
+    grid-area:image;
+    background: linear-gradient(to bottom right, transparent 80%,#fff 100%),url("tat1.jpg") ;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover ;
+    height: 190px;
+}
+
+ #imagus2{
+    background: linear-gradient(to bottom right, transparent 80%,#fff 100%),url("tat2.jpg") 20% 103%;
+    background-size: 300px 300px;
+}
+#imagus3{
+    background: linear-gradient(to bottom right, transparent 80%,#fff 100%),url("tat3.jpg") 20% -2% ;
+    background-size: 360px 360px;
+}
+
+#imagus4{
+    background: linear-gradient(to bottom right, transparent 80%,#fff 100%),url("tat4.jpg") 40%  5%;
+    background-size: 300px 300px;
+}
+
+
+.cardtext{
+    grid-area:text;
+    transform: translateZ(30px);
+    
+}
+
+.cardtext .date{
+    color: rgb(254,184,54);
+    font-size: 13px;
+}
+
+.cardtext p{
+    color: black;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.cardtext h2{
+    margin-top: 0px;
+    font-size: 28px;
+
+}
+.stats{
+    grid-area:stats;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: black;
+    
+}
+#status1{
+    margin-top: 143px;
+}
+.stats .stat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    color: white;
+    
+
+}
+
+.card .stat .type{
+    font-size: 11px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: rgb(255,173,27);
+}
+
+.card .stat .value{
+    font-size: 22px;
+    font-weight: 500;
+    color: rgb(255,173,27);
+}
+
+.card .stat .value a{
+    font-size: 22px;
+    font-weight: 500;
+    color: rgb(255,173,27);
+}
+
+.stats .border{
+    border-left: 1px solid rgb(254,184,54);
+    border-right: 1px solid rgb(254,184,54);
+}
+
+.stats .value .sup{
+    font-size: 12px;
+}
+
+
+
+.rgb::after{
+    content: "";
+    background: linear-gradient(45deg,
+    black 0%,
+    rgb(254,184,54) 25%,
+    rgb(255,173,27)50%,
+    #fff 100%)
+    repeat 0% 0%  / 300% 100%;
+    position: absolute;
+    inset: -3px;
+    animation: rgb 6s linear infinite;
+    border-radius: 16px;
+    filter: blur(8px);
+    transform: translateZ(-1px);
+}
+
+@keyframes rgb{
+    0%{background-position: 0% 50% ;}
+    50%{background-position: 100% 50% ;}
+    100%{background-position: 0% 50% ;}
+}
+
+/* media queries */
+@media (max-width:768px){
+    .heading{
+        font-size: 250%;
+    }
+
+    .heading-sm{
+        font-size: 180%;
+    }
+
+    .deuxcol{
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+}
